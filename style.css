@@ -1,0 +1,614 @@
+/***************************************************************************
+        Descrição
+****************************************************************************
+	Theme Name: Óticas Lobão
+	Description: Teste para MarcaSite
+	Author: Geovani Assis Pereira
+****************************************************************************
+        Fontes
+***************************************************************************/
+	
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@700&display=swap');
+
+/***************************************************************************
+        All
+***************************************************************************/
+
+	.font--open-sans{ font-family: 'Open Sans', sans-serif; }
+	.font--yantramanav{ font-family: 'Yantramanav', sans-serif; }
+
+	*{
+		margin: 0;
+		box-shadow: 0 0 0 0;
+		border: 0 none;
+		outline: 0;
+		transition: ease .8s all;
+	} 
+
+	a{
+		text-decoration: none !important; 
+		cursor: pointer;
+	}
+
+	body{
+		background-color: #fff0 !important;
+		overflow-x: hidden;
+	}
+	html{
+		overflow-x: hidden;
+	}
+
+	.desktop{ display: block !important; }
+	.tablet, .mobile{ display: none !important; }
+
+	.mrg__top--25{ margin-top: 25px !important; }
+	.mrg__top--70{ margin-top: 70px !important; }
+
+	.mrg__bot--25{ margin-bottom: 25px !important; }
+
+	.pad__bot--70{ padding-bottom: 70px !important; }
+
+	.txt--center{ text-align: center; }
+
+/***************************************************************************
+        Menu - Nav
+***************************************************************************/
+
+	nav.navbar{
+	    position: fixed;
+		min-height: 90px;
+	    z-index: 10;
+	    width: 100%;
+	    margin: 0;
+	    top: 0;
+        border-radius: 0;
+        background-size: cover;
+        border: none;
+	}
+
+	nav.navbar.drop{
+		background-color: #000000c4;
+	}
+	nav.navbar.drop #logo_menu a img {
+	    margin-top: 0px;
+		filter: drop-shadow(0px 0px 1px white);
+	}
+
+	nav.navbar.drop #opcao_menu div a {
+	    padding-top: 25px;
+	}
+
+	#logo_menu a img{
+		max-width: 100%;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+
+	#logo_menu a:hover img{ filter: drop-shadow(2px 4px 6px #000); }
+
+	#opcao_menu{ text-align: right; 
+	}
+	#opcao_menu div{
+		margin: 0px 10px 35px;
+		display: inline-flex;
+	}
+	#opcao_menu div a{
+		color: #fff;
+	    font-size: 17px;
+	    font-weight: bold;
+		border-top: solid 5px #0000;
+		padding-top: 35px;
+		text-shadow: 0 0 20px #000000cc;
+	}
+	#opcao_menu div a:hover,
+	#opcao_menu div a.in{
+		border-top: solid 5px #e41218;
+		text-shadow: 0 0 7px #000000;
+	}
+
+    #fundoMenu.activo{
+		top: 0;
+		z-index: 9;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: #0000007d;
+    }
+
+/***************************************************************************
+        Banner
+***************************************************************************/
+
+	#banner{
+		padding-top: 115px;
+		background: url(imgs/banner_topo.jpg) center;
+		background-size: cover;
+		min-height: 630px;
+	}
+
+	#banner #primeira__linha{
+		font-size: 50px;
+		font-variant: all-petite-caps;
+		font-weight: 800;
+		position: absolute;
+		right: 238px;
+		top: 14px;
+		color: #000;
+	}
+	#banner #segunda__linha{
+		font-size: 275px;
+		font-weight: 700;
+		position: absolute;
+		right: 170px;
+		top: -45px;
+		color: #e41218;
+	    letter-spacing: -11px;
+	}
+	#banner #terceira__linha{
+		font-size: 100px;
+		font-variant: all-petite-caps;
+		font-weight: 700;
+		position: absolute;
+		right: 0;
+		top: 200px;
+		color: #000;
+	}
+
+/***************************************************************************
+        Marca
+***************************************************************************/
+
+	#carrossel_marca img {
+		padding: 5px;
+		width: 100%;
+	}
+
+/***************************************************************************
+        Banner Óculos
+***************************************************************************/
+
+	#bloco__oculos{
+		background-color: #f6f6f6;
+	}
+
+	#bloco__oculos img{
+		width: 100%;
+	}
+
+	#bloco__oculos h3{
+		font-size: 117px;
+		font-weight: 700;
+		position: absolute;
+		left: 120px;
+		top: 116px;
+		color: #e41218;
+		letter-spacing: -9px;
+		line-height: 98px;
+	}
+	#bloco__oculos #oculos__sol h3{
+		left: auto;
+		right: 120px;
+	}
+
+	#bloco__oculos p{
+		margin: 0;
+		padding: 15px 20px;
+		background-color: black;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+		position: absolute;
+		left: 225px;
+		top: 345px;
+	}
+
+	#bloco__oculos #oculos__sol p{
+		top: 320px;
+		left: auto;
+		right: 165px;
+	}
+
+/***************************************************************************
+        Serviços
+***************************************************************************/
+
+	#servicos img{
+		float: right;
+		max-width: 100%;
+	}
+
+	#servicos .bloco__texto{
+		background-color: #e41218;
+		z-index: 1;
+		position: absolute;
+		padding: 15px 60px 15px 20px;
+		margin-top: 180px;
+	}
+
+	#servicos .bloco__texto span{
+		font-size: 22px;
+		font-weight: 600;
+		color: #000;
+	}
+
+	#servicos .bloco__texto h3{
+		font-size: 67px;
+		color: white;
+		font-family: 'Yantramanav', sans-serif;
+		letter-spacing: -1px;
+		line-height: 45px;
+		margin: 10px 0 10px;
+	}
+	#servicos .bloco__texto p{
+		margin: -11px 0 0 0;
+		padding: 10px 30px;
+		width: fit-content;
+		background-color: black;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+		position: absolute;
+	}
+
+/***************************************************************************
+        Parceiros
+***************************************************************************/
+
+	#parceiros{
+		background: #f3f3f3;
+		display: flex;
+	}
+	#parceiros div{
+		width: 25%;
+		padding: 15px;
+	}
+	#parceiros div img{
+		width: 100%;
+	}
+	#parceiros div p{
+		margin: 40% 0 0;
+		color: #000;
+		font-size: 22px;
+		font-weight: 800;
+		float: right;
+	}
+
+/***************************************************************************
+        Footer
+***************************************************************************/
+
+	footer{
+		background-color: #000;
+		padding: 50px 0 70px;
+	}
+
+	footer h1{
+		color: #fff;
+	    font-weight: 700;
+	    font-family: 'Yantramanav', sans-serif;
+	    font-size: 42px;
+	}
+
+	footer h1 span{
+		color: #e41218;
+	}
+
+	footer p{
+		color: #fff;
+		font-size: 19px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	footer p.menu__footer{
+		padding-left: 70px;
+		font-size: 17px;
+		margin: 0 0 10px;
+	}
+
+	footer span.numero__telefone{
+		color: #e41218;
+		font-weight: 700;
+		font-family: 'Yantramanav', sans-serif;
+		font-size: 17px;
+	}
+
+	footer p.endereco__footer{
+		color: #8e8e8e;
+		margin-top: 50px;
+    	font-size: 16px;
+	}
+
+/***************************************************************************
+        Responsive
+***************************************************************************/
+
+	@media only screen and (max-width: 1199px){
+
+		#banner #primeira__linha{
+			top: 60px;
+			font-size: 44px;
+			font-weight: 700;
+			right: 210px;
+		}
+		#banner #segunda__linha{
+			font-size: 230px;
+			right: 145px;
+			top: 10px;
+		}
+		#banner #terceira__linha{
+		    font-size: 83px;
+		    top: 220px;
+		}
+
+		#bloco__oculos #oculos__infantis h3{
+			top: 50px;
+		}
+		#bloco__oculos #oculos__infantis p{
+			top: 270px;
+		}
+
+		#servicos .bloco__texto{
+			padding: 15px 20px 15px 20px;
+		}
+
+	}
+
+	@media only screen and (max-width: 991px){
+
+		#opcao_menu{
+			display: none;
+			margin-top: 15px;
+		}
+		#opcao_menu div{
+			margin: 0px 10px 20px !important;
+			text-align: center;
+    		display: block;
+		}
+		#logo_menu a img {
+		    margin-top: 0px !important;
+		}
+
+		#opcao_menu div a {
+			padding-top: 0px !important;
+		}
+
+		nav.navbar.activo{
+			background-color: #000000e6;
+		}
+
+		nav.navbar.activo #logo_menu a img{
+		    filter: drop-shadow(0px 0px 1px white);
+		}
+
+	    .hamburguer-bt{
+			width: 40px;
+			height: 40px;
+			float: right;
+			padding: 6px;
+			display: block;
+			margin-top: 20px;
+			border-radius: 50px;
+			transition: ease .8s all;
+			border: solid 2px #e41218;
+			box-shadow: 3px 1px 7px 0px black;
+	    }
+
+	    .hamburguer-bt .hamburguer-bt__stripe{
+	      	height: 2px;
+	      	margin-top: 5px;
+	      	transition: ease .8s all;
+	      	background-color: #000;
+	      	box-shadow: 3px 1px 7px 0px black;
+	    }
+
+	    .drop .hamburguer-bt .hamburguer-bt__stripe{
+	      	background-color: #fff;
+	    }
+
+	    .hamburguer-bt.activo .hamburguer-bt__stripe{
+	      	background-color: #e41218;
+	    }
+
+	    .hamburguer-bt.activo .hamburguer-bt__stripe__top{
+	        transform: rotate(45deg);
+	        margin: 12px 0 0;
+	    }
+
+	    .hamburguer-bt.activo .hamburguer-bt__stripe__middle{
+	        opacity: 0;
+	    }
+
+	    .hamburguer-bt.activo .hamburguer-bt__stripe__bottom{
+	        transform: rotate(-45deg);
+	        margin: -9px 0 0;
+	    }
+
+	    #banner { min-height: 500px; }
+
+		#banner #primeira__linha{
+			top: 40px;
+			font-size: 35px;
+			right: 160px;
+		}
+		#banner #segunda__linha{
+			font-size: 187px;
+			right: 111px;
+			top: 0px;
+		}
+		#banner #terceira__linha{
+		    font-size: 64px;
+		    top: 165px;
+		}
+
+		#bloco__oculos h3{ top: 0px !important; }
+
+		#bloco__oculos p { top: 215px; }
+
+		#bloco__oculos #oculos__grau p{ top: 230px; }
+
+		#bloco__oculos #oculos__grau h3,
+		#bloco__oculos #oculos__infantis h3 { left: 20px; }
+
+		#bloco__oculos #oculos__sol h3 { right: 20px; }
+
+		#bloco__oculos #oculos__grau p,
+		#bloco__oculos #oculos__infantis p { left: 125px; }
+
+		#bloco__oculos #oculos__sol p{
+			right: 65px;
+			top: 210px;
+		}
+		#bloco__oculos #oculos__infantis p {
+		    top: 220px;
+		}
+
+		#servicos .bloco__texto{
+			margin-top: 233px;
+		}
+
+		footer .bloco{
+			margin-bottom: 50px;
+		}
+
+		footer{
+			padding: 50px 0 20px;
+		}
+
+	}
+
+	@media only screen and (max-width: 767px){
+
+		#banner {
+			background-position-x: -239px;
+			min-height: 450px;
+		}
+
+		#bloco__oculos img {
+		    height: 400px;
+		    object-fit: cover;
+		    object-position: top;
+		}
+
+		#oculos__sol img{
+			margin-top: -2px;
+		}
+
+		#bloco__oculos #oculos__grau h3,
+		#bloco__oculos #oculos__infantis h3{
+			top: -190px !important;
+			font-size: 62px !important;
+			letter-spacing: -3px !important;
+			line-height: 50px !important;
+		}
+
+		#bloco__oculos #oculos__grau p,
+		#bloco__oculos #oculos__infantis p{
+			top: -63px;
+			left: 25px;
+			padding: 10px 15px;
+		}
+
+		#bloco__oculos #oculos__sol h3{
+			z-index: 1;
+			top: 220px !important;
+			font-size: 62px !important;
+			letter-spacing: -3px !important;
+			line-height: 50px !important;
+			right: auto;
+			left: 25px;
+		}
+
+		#bloco__oculos #oculos__sol p{
+			z-index: 1;
+			top: 339px;
+			left: 25px;
+			right: auto;
+			padding: 10px 15px;
+		}
+
+		#servicos img {
+		    float: right;
+		    max-width: 100%;
+		    min-height: 250px;
+		    object-fit: cover;
+		}
+
+		footer p.menu__footer{
+			padding-left: 0px;
+		}
+		footer .bloco{
+			text-align: center;
+		}
+
+	}
+
+	@media only screen and (max-width: 616px){
+
+		#banner #primeira__linha{
+			top: 149px;
+			font-size: 33px;
+			right: 95px;
+		}
+
+		#banner #segunda__linha{
+			font-size: 145px;
+			right: 70px;
+			top: 120px;
+		}
+
+		#banner #terceira__linha{
+			top: 250px;
+			font-size: 46px;
+		}
+			
+		#parceiros div.texto{
+			width: 100%;
+		}
+		#parceiros div.imagem{
+			margin: 0 auto;
+			width: 50%;
+			padding: 0;
+		}	
+
+		#servicos img {
+		    height: 300px;
+		    width: 100%;
+		}
+
+		#parceiros{
+			margin-top: 127px;
+		    display: block;
+		}
+		#parceiros div p {
+			float: none;
+			margin: 15px auto;
+			text-align: center;
+		}
+
+	}
+
+	@media only screen and (max-width: 390px){
+
+		#servicos .bloco__texto {
+		    margin-top: 240px;
+		}
+
+		#servicos .bloco__texto {
+		    margin-top: 280px;
+		    width: 100%;
+		    position: inherit;
+		}
+		
+		#servicos .bloco__texto h3 {
+		    font-size: 59px;
+		}
+
+		#servicos .bloco__texto p {
+    		margin: -6px 0 0 0;
+    	}
+		#parceiros{
+			margin-top: 27px;
+		}
+	}
